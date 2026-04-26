@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Enzo Racinet</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f5e3;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e1e0f;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2b2b0a;
+        }
+
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .competence {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 250px;
+            max-width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .competence:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .competence i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #6c5ce7;
+        }
+
+        .competence h3 {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: #1e1e0f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 0.5rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fas fa-user-astronaut"></i> Enzo Racinet</h1>
+        <nav>
+            <a href="#competences"><i class="fas fa-tools"></i> Compétences</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="competences">
+            <h2><i class="fas fa-laptop-code"></i> Mes Compétences</h2>
+            <div class="competences">
+                <div class="competence">
+                    <i class="fas fa-code"></i>
+                    <h3>Programmation</h3>
+                    <p>Maîtrise de Python, HTML, CSS, SQL. Création de scripts et de sites web dynamiques.</p>
+                </div>
+                <div class="competence">
+                    <i class="fas fa-square-root-variable"></i>
+                    <h3>Mathématiques</h3>
+                    <p>Solides bases en algèbre, trigonométrie, matrices et traitement du signal.</p>
+                </div>
+                <div class="competence">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Réseaux</h3>
+                    <p>Gestion des systèmes, connaissances en administration réseau et protocoles.</p>
+                </div>
+                <div class="competence">
+                    <i class="fas fa-language"></i>
+                    <h3>Anglais Technique</h3>
+                    <p>Lecture et rédaction techniques en anglais, interactions en environnement professionnel.</p>
+                </div>
+                <div class="competence">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Système Linux</h3>
+                    <p>Maîtrise des commandes `chmod`, `chown` et gestion des droits utilisateurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fas fa-envelope-open-text"></i> Contact</h2>
+            <p>Vous pouvez me contacter par e-mail à <a href="mailto:enzo@example.com">enzo@example.com</a> ou sur <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enzo Racinet. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

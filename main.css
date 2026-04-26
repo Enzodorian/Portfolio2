@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+html{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #222;
+}
+header{
+    min-height: 150vh;
+    background:url(images/Capture3.png);
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+header>div{
+    width: 50%;
+    color: whitesmoke;
+}
+
+header>div>*{
+    margin-top: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+div.social a{
+    color: #bbb;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+div.social a:hover{
+    color:cyan;
+}
+div.social a span{
+    display: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding:1rem;
+    box-sizing: border-box;
+    color:whitesmoke;
+    background: rgba(186,184,108,0.6);
+}
+nav p {
+    color:whitesmoke;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+main section{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding:4rem;
+}
+
+fieldset{
+    padding:1em 2em;
+    border-radius: 20;
+}
+/* Conteneur des boutons */
+.button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Centrer les boutons */
+    margin-top: 2rem;
+}

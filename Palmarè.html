@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Palmarès - Enzo Racinet</title>
+    <meta name="description" content="Découvrez les performances sportives, musicales et personnelles d'Enzo Racinet.">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f5e3;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e1e0f;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2b2b0a;
+        }
+
+        .palmares {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .palmares-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 250px;
+            max-width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .palmares-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .palmares-item i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #e67e22;
+        }
+
+        .palmares-item h3 {
+            margin: 0.5rem 0;
+            color: #061807;
+        }
+
+        footer {
+            background-color: #1e1e0f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 0.5rem;
+            }
+
+            .palmares-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fas fa-trophy"></i> Enzo Racinet</h1>
+        <nav>
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Accueil</a>
+            <a href="#palmares"><i class="fas fa-medal"></i> Palmarès</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="palmares">
+            <h2><i class="fas fa-medal"></i> Mes Palmarès</h2>
+            <div class="palmares">
+                <div class="palmares-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Musculation</h3>
+                    <p>Performance : 100 kg au développé couché.<br> 
+                    Description : Force et persévérance acquises grâce à un entraînement régulier et une progression constante.</p>
+                </div>
+
+                <div class="palmares-item">
+                    <i class="fas fa-swimmer"></i>
+                    <h3>Natation</h3>
+                    <p>Performance : 30 séries de 50 mètres.<br>
+                    Description : Résistance et technique développées pour maintenir une cadence élevée tout au long des séries.</p>
+                </div>
+
+                <div class="palmares-item">
+                    <i class="fas fa-music"></i>
+                    <h3>Piano</h3>
+                    <p>Œuvres jouées : <em>Nocturne</em> de Chopin, <em>Prélude</em> de Bach, <em>Golden Hour</em>, <em>Beanie</em>, <em>Hymne à l'amour</em>...<br>
+                    Description : Maîtrise émotionnelle et technique des œuvres, fruit d’un apprentissage autodidacte passionné.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enzo Racinet. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
