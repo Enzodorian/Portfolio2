@@ -19,8 +19,21 @@ html {
 
 header {
     min-height: 100vh;
-    background: url("images/Capture_bg.jpg") center center / contain no-repeat;
-    background-color: #222;
+
+    background-image:
+        url("images/Capture_bg.jpg"),
+        url("images/Capture_bg.jpg");
+
+    background-size:
+        contain,
+        cover;
+
+    background-position:
+        center,
+        center;
+
+    background-repeat: no-repeat;
+
     display: flex;
     align-items: center;
     justify-content: left;
