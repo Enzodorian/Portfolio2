@@ -17,13 +17,17 @@ html {
 
 /* Header */
 header {
-min-height: 100vh;
-    background: url(images/Capture_bg.jpg) ;
+header {
+    min-height: 100vh;
+    background-image: url("images/Capture.jpg");
     background-size: cover;
-    display:flex;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
     justify-content: left;
     color: whitesmoke;
+}
 }
 
 header > div {
