@@ -18,10 +18,12 @@ html {
 /* Header */
 header {
     min-height: 100vh;
-    background: url("images/Capture_bg.jpg");
-    background-size: cover;
-    background-position: center 70%;
+    background-image: url("images/Capture_bg.jpg");
+    background-size: auto 100vh;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-color: #222;
+
     display: flex;
     align-items: center;
     justify-content: left;
