@@ -18,9 +18,11 @@ html {
 /* Header */
 header {
     min-height: 100vh;
-    background: url(images/Capture.jpg) ;
+    background-image: url("images/Capture.jpg");
     background-size: cover;
-    display:flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
     justify-content: left;
     color: whitesmoke;
